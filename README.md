@@ -30,29 +30,29 @@ A				0		0
 -A-				1		0				
 B-B				0		1
 
---A--			2		0
--B-B-			1		1
-C---C			0		3
+--A--			  2		0
+-B-B-			  1		1
+C---C			  0		3
 
----A---			3		0
---B-B--			2		1
--C---C-			1		3
-D-----D			0		5
+---A---			  3		0
+--B-B--			  2		1
+-C---C-			  1		3
+D-----D			  0		5
 
-----A----		4		0
----B-B---		3		1
---C---C--		2		3
--D-----D-		1		5
-E-------E		0		7
+----A----		  4		0
+---B-B---		  3		1
+--C---C--		  2		3
+-D-----D-		  1		5
+E-------E		  0		7
 
------A-----		5		0
-----B-B----		4		1
----C---C---		3		3
---D-----D--		2		5
--E-------E-		1		7
-F---------F		0		9
+-----A-----		  5		0
+----B-B----		  4		1
+---C---C---		  3		3
+--D-----D--		  2		5
+-E-------E-		  1		7
+F---------F		  0		9
 
 ```
-We observe the the outer padding is 1 minus the index of the alphabet letter (ie. E is in the 5th index, so the outer padding starts at 4). We also observe the inner values are odd numbers that start with 0, and proceed accordingly. The general formula for an odd number is 2X-1 where x is the index number.
+We observe the the maximum outer padding is 1 minus the index of the alphabet letter (ie. E is in the 5th index, so the max outer padding is 4). We also observe the inner values are odd numbers that start with 0. The general formula for an odd number is 2X-1 where x is the index number.
 
 This completes the first half of the diamond. To complete the diamond, taking all the rows minus the middle row, reversing it and adding to the existing diamond will complete the diamond.
